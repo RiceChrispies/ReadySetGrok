@@ -1,0 +1,120 @@
+Looks like I need to change from "Cover Page" to full website with cover page to change the site title.  Problem is, that costs more money, and I'm not sure if what I've done so far will transfer.
+
+This is a service
+
+Time is on your side
+when you start learning in a more efficient manner.
+
+Learning is an essential part of life. So is cooking, cleaning, working, and taking your kids to soccer practice. Imagine a tool which enables you to learn things as efficiently as possible by croudsourcing lesson plans and then rating their effectivness.  If this interests you, please sign up to be notified when we go live:
+
+Enter email address
+(You will only get 2 emails: One as a confirmation, another when we go live asking you to create an account.)
+
+Initial page should look like this:
+http://okdork.com/mint/?i=1
+
+Maybe buy ads on FB and/or Google?
+
+Landing page: 
+"What do you want to learn?"
+Trending topics
+About this site
+
+Child page (after search)
+Direct Resources w/ user ratings
+Lesson Plans
+
+The goal is to make learning efficient
+
+SquareSpace Info:
+Email: Ricechrispies@gmail.com
+Password: ynM3tlq9AC73
+
+Buy domain
+
+Set up webiste to take in emails of those interested
+
+Set messanging
+	
+Create database with entries like this "Site.Dicpline.Subject (ex. Kahn.Math.K-8thGrade)"
+	Maybe pull tags from each site for each subject and integrate into search
+
+Suggestion Box for new content
+
+Allow people to create logins for the site
+
+Allow people to create Lesson Plans
+
+Do some marketing
+
+Institute a rating system with comments (Amazon style)
+
+Integrate with other learning sites for SSO and membership crossover
+
+Find a good way to create paid memberships to other sites (like Audible) via participation on my site.
+
+Teachers/students
+
+Assign lessons/view progress
+
+Differet levels of learning: New, brush up, Advanced, general concepts
+
+Need to find a way to make progress viewable and acceptable (by employers)
+	Maybe clock active hours per subject area?
+
+Allow end users to enter courses they have taken and rate them directly
+	We would need a link to the course, the course name, and a rating
+
+Instead of validating the rating to be divisible by 5, figure out how to have a drop-down
+
+need to lock down all user inputs with proper validations for length and content
+
+Was this rating helpful?
+
+I have almost completely abandoned the idea of doing this on SquareSpace, and am instead coding it from scratch myself.
+C:\Sites\ReadySetGrok
+
+Resources: 
+	Users
+	Subjects
+	Ratings
+
+Current Sites:
+		Khan Academy
+		Coursera
+		W3 Schools
+		TedEd
+		Codecademy
+		Open Culture
+		Open Yale Courses
+		Academic Earth
+		
+$Spent:
+$25 on domain
+6.25 on Email
+
+Set up database as described above.
+	site
+	category
+	subject
+		Rating
+		Rating.Comment
+
+	site has many cateogories, subjects
+	subject has may ratings, rating.comments
+	
+Header has Site, Category, Subject:
+	Site:
+		Lists each site with overall average rating. Maybe some helpful (as described in "was this rating helpful) rating.comments
+	Category:
+		Lists each category of subject, clicking on the category leads you to the sites which teach in that category with average rating for the site.category
+	Subject:
+		Lists each subject alphabetically or by most popular. Clicking on the subject leads you to the sites which teach you that subject with average ratings for site.subject
+		
+Users can suggest new sites/categores/subjects, but for now I'll add them manually. 
+
+Next step: Populate database
+
+I'm getting the python step down so I can just grab the subjects from the learning websites.  After this is all implemented, I can work on gathering more information from those websites.
+
+Find a way to get the differences between one subject and another (for instance: ruby and Python) and then only teach the differences.t

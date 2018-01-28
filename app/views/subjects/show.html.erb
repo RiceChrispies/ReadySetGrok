@@ -1,0 +1,29 @@
+
+<p>
+  <strong>Subject:</strong>
+  <%= @subject.subjectName %>
+</p>
+ 
+<p>
+  <strong>Site:</strong>
+  <%= @subject.site %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @subject.category %>
+</p>
+
+
+   <%= rating_for @subject, "rating", {readonly: true} %>
+
+
+
+<h2>Ratings</h2>
+<%= render @subject.ratings %>
+
+<h2>Add a rating:</h2>
+<%= render 'ratings/form' %>
+
+<%= link_to 'Edit', edit_subject_path(@subject) %> |
+<%= link_to 'Back', subjects_path %>

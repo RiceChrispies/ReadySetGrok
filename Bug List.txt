@@ -1,0 +1,8 @@
+Website Bug List:
+
+
+Star ratings are not being destroyed with overall ratings
+
+Header bar doesn't scale properly w/ header objects
+
+python script for edx site prints all subjects (including popular) instead of just all subjects, doubling some of them

@@ -1,0 +1,24 @@
+<% content_for :top_content do %>
+<div id="simple-container">
+	<% if current_user == nil %>
+		<center>
+		  <h1>Welcome!</h1>
+		  <p>Register or Login to get started.</p>
+		  <p>
+			<%= link_to 'Register', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
+		  </p>
+		  <p>
+			<%= link_to 'Login', new_user_session_path, class: 'btn btn-primary btn-lg' %>
+		  </p>
+		  </center>
+	<% else %>
+		<center>
+		  <h1>Welcome!</h1>
+		  <p>We're glad you're back!</p>
+		  <p>
+			<%= link_to 'Subjects', subjects_path, class: 'btn btn-primary btn-lg' %>
+		  </p>
+		  </center>
+	<%end%>
+	</div>
+<% end %>

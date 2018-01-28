@@ -1,0 +1,34 @@
+ <%= form_for @subject, url: subjects_path do |f| %>
+
+  <% if @subject.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@subject.errors.count, "error") %> prohibited
+        this subject from being saved:
+      </h2>
+      <ul>
+        <% @subject.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="form-group">
+    <%= f.label :subjectName, "Subject" %>
+    <%= f.text_field :subjectName, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :site %>
+    <%= f.text_field :site, class: 'form-control' %>
+  </div>
+<%# would be cool to have this search as you type %>
+
+  <div class="form-group">
+    <%= f.label :category %>
+    <%= f.text_field :category, class: 'form-control' %>
+  </div>
+  
+  <%= f.submit "Submit", class: 'btn btn-primary' %>
+<% end %>

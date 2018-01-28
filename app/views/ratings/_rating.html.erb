@@ -1,0 +1,32 @@
+<style>
+div.ratings{
+	background-color: silver;
+	color: white;
+	margin: 20px 0 20px 0;
+	padding: 20px;
+	}
+</style>
+
+
+<div class = "ratings">
+ <strong>user:</strong>
+    <%= rating.user.name %>
+  </p>
+ 
+  <p>
+    <strong>rating:</strong>
+    <%= rating.body %>
+  </p>
+  
+  <%= rating_for_user @subject, rating.user, "rating", cancel: false %>
+  
+  <p>
+  <% if current_user == rating.user %>
+	  <%= link_to 'Destroy Rating', [rating.subject, rating], 
+				   method: :delete,
+				   data: { confirm: 'Are you sure?' } %>
+	<% end %>
+</p>
+
+</div>
+

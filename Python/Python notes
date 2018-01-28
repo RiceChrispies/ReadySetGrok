@@ -1,0 +1,11 @@
+Python Notes:
+
+Indentation is 4 spaces
+
+** is Exponent
+% is Modulo
+
+dot notation (.upper, .lower, etc) only works with strings
+
+.pop(index) - removes item from list at index and returns it
+
