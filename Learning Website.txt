@@ -15,7 +15,7 @@ http://okdork.com/mint/?i=1
 
 Maybe buy ads on FB and/or Google?
 
-Landing page: 
+Landing page:
 "What do you want to learn?"
 Trending topics
 About this site
@@ -35,7 +35,7 @@ Buy domain
 Set up webiste to take in emails of those interested
 
 Set messanging
-	
+
 Create database with entries like this "Site.Dicpline.Subject (ex. Kahn.Math.K-8thGrade)"
 	Maybe pull tags from each site for each subject and integrate into search
 
@@ -74,7 +74,7 @@ Was this rating helpful?
 I have almost completely abandoned the idea of doing this on SquareSpace, and am instead coding it from scratch myself.
 C:\Sites\ReadySetGrok
 
-Resources: 
+Resources:
 	Users
 	Subjects
 	Ratings
@@ -88,7 +88,7 @@ Current Sites:
 		Open Culture
 		Open Yale Courses
 		Academic Earth
-		
+
 $Spent:
 $25 on domain
 6.25 on Email
@@ -102,7 +102,7 @@ Set up database as described above.
 
 	site has many cateogories, subjects
 	subject has may ratings, rating.comments
-	
+
 Header has Site, Category, Subject:
 	Site:
 		Lists each site with overall average rating. Maybe some helpful (as described in "was this rating helpful) rating.comments
@@ -110,11 +110,15 @@ Header has Site, Category, Subject:
 		Lists each category of subject, clicking on the category leads you to the sites which teach in that category with average rating for the site.category
 	Subject:
 		Lists each subject alphabetically or by most popular. Clicking on the subject leads you to the sites which teach you that subject with average ratings for site.subject
-		
-Users can suggest new sites/categores/subjects, but for now I'll add them manually. 
+
+Users can suggest new sites/categores/subjects, but for now I'll add them manually.
 
 Next step: Populate database
 
 I'm getting the python step down so I can just grab the subjects from the learning websites.  After this is all implemented, I can work on gathering more information from those websites.
 
 Find a way to get the differences between one subject and another (for instance: ruby and Python) and then only teach the differences.t
+
+I think I may have forgotten the "belongs_to" call in stars.rb
+
+Maybe instead of using python to scrape all of this info, some of these sites may have APIs I can use.
