@@ -47,8 +47,6 @@ Allow people to create Lesson Plans
 
 Do some marketing
 
-Institute a rating system with comments (Amazon style)
-
 Integrate with other learning sites for SSO and membership crossover
 
 Find a good way to create paid memberships to other sites (like Audible) via participation on my site.
@@ -62,16 +60,12 @@ Differet levels of learning: New, brush up, Advanced, general concepts
 Need to find a way to make progress viewable and acceptable (by employers)
 	Maybe clock active hours per subject area?
 
-Allow end users to enter courses they have taken and rate them directly
-	We would need a link to the course, the course name, and a rating
-
 Instead of validating the rating to be divisible by 5, figure out how to have a drop-down
 
 need to lock down all user inputs with proper validations for length and content
 
 Was this rating helpful?
 
-I have almost completely abandoned the idea of doing this on SquareSpace, and am instead coding it from scratch myself.
 C:\Sites\ReadySetGrok
 
 Resources:
@@ -81,8 +75,11 @@ Resources:
 
 Current Sites:
 		Khan Academy
+			API: https://github.com/Khan/khan-api/wiki/Khan-Academy-API
 		Coursera
+			Developers program (with comission!): https://building.coursera.org/developer-program/
 		W3 Schools
+			Couldn't find an API, would probably need to scrape
 		TedEd
 		Codecademy
 		Open Culture
@@ -102,6 +99,7 @@ Set up database as described above.
 
 	site has many cateogories, subjects
 	subject has may ratings, rating.comments
+	Validate how this should work with the MVC model
 
 Header has Site, Category, Subject:
 	Site:
@@ -117,8 +115,6 @@ Next step: Populate database
 
 I'm getting the python step down so I can just grab the subjects from the learning websites.  After this is all implemented, I can work on gathering more information from those websites.
 
-Find a way to get the differences between one subject and another (for instance: ruby and Python) and then only teach the differences.t
-
-I think I may have forgotten the "belongs_to" call in stars.rb
+Find a way to get the differences between one subject and another (for instance: ruby and Python) and then only teach the differences.
 
 Maybe instead of using python to scrape all of this info, some of these sites may have APIs I can use.
