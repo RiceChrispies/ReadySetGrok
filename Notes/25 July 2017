@@ -1,0 +1,20 @@
+I have decided that something is fundamentally wrong with how I am structuring this project, so I am going back to the drawing board, so to speak. I don't think my MVC system is set up correctly, so I'm doing some reading about web dev in general and MVC in particular. I'm starting with this:
+
+https://medium.freecodecamp.org/understanding-the-basics-of-ruby-on-rails-http-mvc-and-routes-359b8d809c7a
+
+In this article, the writer recommends a series of other topics to read up on:
+
+https://medium.freecodecamp.org/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really-b4584e63585c
+https://medium.freecodecamp.org/how-the-web-works-part-ii-client-server-model-the-structure-of-a-web-application-735b4b6d76e3
+https://medium.freecodecamp.org/how-the-web-works-part-iii-http-rest-e61bc50fa0a
+
+So, that's the plan for tonight.
+
+Model: Maintains the relationship between Object and Database and handles validation, association, transactions
+View: A presentation of data in a particular format, triggered by a controller’s decision to present the data.
+Controller: The facility within the application that directs traffic, on the one hand querying the models for specific data, and on the other hand organizing that data (searching, sorting) into a form that fits the needs of a given view.
+
+Good image of this:
+https://cdn-images-1.medium.com/max/1600/1*KK61kGXrkaFBDfY7uWukyQ.png
+
+Stopping after reading the first one as my eyes are getting heavy. Pick up here tomorrow.
