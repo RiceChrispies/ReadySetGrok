@@ -1,0 +1,30 @@
+Not exactly "tomorrow" as suggested by the last entry.
+Renamed last entry to suggest the correct year. It wasn't yesterday, but I wasn't a whole year off either.
+
+Review:
+Model: Maintains the relationship between Object and Database and handles validation, association, transactions
+View: A presentation of data in a particular format, triggered by a controller’s decision to present the data.
+Controller: The facility within the application that directs traffic, on the one hand querying the models for specific data, and on the other hand organizing that data (searching, sorting) into a form that fits the needs of a given view.
+
+Attempting these articles tonight:
+https://medium.freecodecamp.org/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really-b4584e63585c
+https://medium.freecodecamp.org/how-the-web-works-part-ii-client-server-model-the-structure-of-a-web-application-735b4b6d76e3
+https://medium.freecodecamp.org/how-the-web-works-part-iii-http-rest-e61bc50fa0a
+
+TCP/IP is a two-part system, functioning as the Internet’s fundamental “control system”. IP stands for Internet Protocol; its job is to send and route packets to other computers using the IP headers (i.e. the IP addresses) on each packet. The second part, Transmission Control Protocol (TCP), is responsible for breaking the message or file into smaller packets, routing packets to the correct application on the destination computer using the TCP headers, resending the packets if they get lost on the way, and reassembling the packets in the correct order once they’ve reached the other end.
+
+Finished the first one. Moving on to 
+
+https://medium.freecodecamp.org/how-the-web-works-part-ii-client-server-model-the-structure-of-a-web-application-735b4b6d76e3
+
+Since you can’t broadcast the IP addresses of all your server instances, you create a Virtual IP address, which is the address you publicly broadcast to clients. This Virtual IP address points to your load balancer. So when there’s a DNS lookup for your site, it’ll point to the load balancer. Then the load balancer jumps in to distribute traffic to your various back-end servers in real-time.
+
+Each service has a self-contained unit of functionality, such as authorizing users or providing a search functionality. Services allow you to break up your single web server into multiple services that each performs a discrete functionality.
+
+Finished that. I hadn't heard the part about the CDN yet.  On to
+
+https://medium.freecodecamp.org/how-the-web-works-part-iii-http-rest-e61bc50fa0a
+
+The HTTP protocol defines the syntax (the data format and encoding), semantics (the meaning associated with the syntax) and timing (speed and sequencing). Each HTTP request and response exchanged between a client and server is considered a single HTTP transaction.
+
+That's it for today.
